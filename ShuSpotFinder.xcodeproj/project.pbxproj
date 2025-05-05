@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		08FC52D52DC85A1E00E4B82C /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FC52D32DC85A1E00E4B82C /* User+CoreDataClass.swift */; };
+		08FC52D62DC85A1E00E4B82C /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FC52D42DC85A1E00E4B82C /* User+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0884BD662DB69975002270BF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		0884BD4F2DB69973002270BF /* ShuSpotFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShuSpotFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0884BD652DB69975002270BF /* ShuSpotFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShuSpotFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0884BD6F2DB69975002270BF /* ShuSpotFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShuSpotFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08FC52D32DC85A1E00E4B82C /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		08FC52D42DC85A1E00E4B82C /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -34,6 +41,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
+				ShuSpotFinder.xcdatamodeld,
 			);
 			target = 0884BD4E2DB69973002270BF /* ShuSpotFinder */;
 		};
@@ -46,16 +54,6 @@
 				0884BD772DB69975002270BF /* Exceptions for "ShuSpotFinder" folder in "ShuSpotFinder" target */,
 			);
 			path = ShuSpotFinder;
-			sourceTree = "<group>";
-		};
-		0884BD682DB69975002270BF /* ShuSpotFinderTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ShuSpotFinderTests;
-			sourceTree = "<group>";
-		};
-		0884BD722DB69975002270BF /* ShuSpotFinderUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ShuSpotFinderUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -88,9 +86,9 @@
 		0884BD462DB69973002270BF = {
 			isa = PBXGroup;
 			children = (
+				08FC52D32DC85A1E00E4B82C /* User+CoreDataClass.swift */,
+				08FC52D42DC85A1E00E4B82C /* User+CoreDataProperties.swift */,
 				0884BD512DB69973002270BF /* ShuSpotFinder */,
-				0884BD682DB69975002270BF /* ShuSpotFinderTests */,
-				0884BD722DB69975002270BF /* ShuSpotFinderUITests */,
 				0884BD502DB69973002270BF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,9 +141,6 @@
 			dependencies = (
 				0884BD672DB69975002270BF /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				0884BD682DB69975002270BF /* ShuSpotFinderTests */,
-			);
 			name = ShuSpotFinderTests;
 			packageProductDependencies = (
 			);
@@ -165,9 +160,6 @@
 			);
 			dependencies = (
 				0884BD712DB69975002270BF /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				0884BD722DB69975002270BF /* ShuSpotFinderUITests */,
 			);
 			name = ShuSpotFinderUITests;
 			packageProductDependencies = (
@@ -208,6 +200,9 @@
 			);
 			mainGroup = 0884BD462DB69973002270BF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				085269012DB7EFDA00567711 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0884BD502DB69973002270BF /* Products */;
 			projectDirPath = "";
@@ -249,6 +244,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08FC52D52DC85A1E00E4B82C /* User+CoreDataClass.swift in Sources */,
+				08FC52D62DC85A1E00E4B82C /* User+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +566,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		085269012DB7EFDA00567711 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 0884BD472DB69973002270BF /* Project object */;
 }

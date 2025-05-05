@@ -1,19 +1,16 @@
-//
-//  ViewController.swift
-//  ShuSpotFinder
-//
-//  Created by d.igihozo on 4/21/25.
-//
-
+// ViewController.swift
 import UIKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+ 
+    @IBAction func loginButtonTapped(_ sender: UIButton) {
+        let loginVC = LoginWebViewController()
+        navigationController?.pushViewController(loginVC, animated: true)
+    }
 }
-
+    
