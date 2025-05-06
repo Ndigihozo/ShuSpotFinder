@@ -4,10 +4,8 @@
 //
 //  Created by d.igihozo on 4/21/25.
 //
-
 import UIKit
 import CoreData
-
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -56,4 +54,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
    
     }
-

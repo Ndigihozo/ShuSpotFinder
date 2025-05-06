@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23605" systemVersion="24E263" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
-    <entity name="User" representedClassName="ShuSpotFinder.User" syncable="YES" codeGenerationType="class">
+    <entity name="LotUsage" representedClassName="LotUsage" parentEntity="User" syncable="YES">
+        <attribute name="action" optional="YES" attributeType="String"/>
+        <attribute name="lotname" optional="YES" attributeType="String"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="usage" inverseEntity="User"/>
+    </entity>
+    <entity name="User" representedClassName="ShuSpotFinder.User" syncable="YES">
+        <attribute name="currentlot" optional="YES" attributeType="String"/>
+        <attribute name="parkinglottrend" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
         <attribute name="password" optional="YES" attributeType="String"/>
         <attribute name="passwordpasswordConfirmation" optional="YES" attributeType="String"/>
         <attribute name="username" optional="YES" attributeType="String"/>
+        <relationship name="usage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LotUsage" inverseName="user" inverseEntity="LotUsage"/>
     </entity>
 </model>

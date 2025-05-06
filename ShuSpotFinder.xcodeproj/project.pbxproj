@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08449C442DCA4B1E000890B3 /* LotUsage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08449C422DCA4B1E000890B3 /* LotUsage+CoreDataClass.swift */; };
+		08449C452DCA4B1E000890B3 /* LotUsage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08449C432DCA4B1E000890B3 /* LotUsage+CoreDataProperties.swift */; };
 		08FC52D52DC85A1E00E4B82C /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FC52D32DC85A1E00E4B82C /* User+CoreDataClass.swift */; };
 		08FC52D62DC85A1E00E4B82C /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FC52D42DC85A1E00E4B82C /* User+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08449C422DCA4B1E000890B3 /* LotUsage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LotUsage+CoreDataClass.swift"; sourceTree = "<group>"; };
+		08449C432DCA4B1E000890B3 /* LotUsage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LotUsage+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0884BD4F2DB69973002270BF /* ShuSpotFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShuSpotFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0884BD652DB69975002270BF /* ShuSpotFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShuSpotFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0884BD6F2DB69975002270BF /* ShuSpotFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShuSpotFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,7 +45,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
-				ShuSpotFinder.xcdatamodeld,
 			);
 			target = 0884BD4E2DB69973002270BF /* ShuSpotFinder */;
 		};
@@ -86,6 +89,8 @@
 		0884BD462DB69973002270BF = {
 			isa = PBXGroup;
 			children = (
+				08449C422DCA4B1E000890B3 /* LotUsage+CoreDataClass.swift */,
+				08449C432DCA4B1E000890B3 /* LotUsage+CoreDataProperties.swift */,
 				08FC52D32DC85A1E00E4B82C /* User+CoreDataClass.swift */,
 				08FC52D42DC85A1E00E4B82C /* User+CoreDataProperties.swift */,
 				0884BD512DB69973002270BF /* ShuSpotFinder */,
@@ -245,6 +250,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				08FC52D52DC85A1E00E4B82C /* User+CoreDataClass.swift in Sources */,
+				08449C442DCA4B1E000890B3 /* LotUsage+CoreDataClass.swift in Sources */,
+				08449C452DCA4B1E000890B3 /* LotUsage+CoreDataProperties.swift in Sources */,
 				08FC52D62DC85A1E00E4B82C /* User+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

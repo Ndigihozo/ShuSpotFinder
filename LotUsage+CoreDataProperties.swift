@@ -5,10 +5,8 @@
 //  Created by d.igihozo on 5/6/25.
 //
 //
-
 import Foundation
 import CoreData
-import ShuSpotFinder
 
 extension LotUsage {
 

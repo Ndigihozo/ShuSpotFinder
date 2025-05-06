@@ -4,8 +4,6 @@
 //
 //  Created by d.igihozo on 5/4/25.
 //
-//
-
 import Foundation
 import CoreData
 
@@ -19,6 +17,9 @@ extension User {
     @NSManaged public var username: String?
     @NSManaged public var password: String?
     @NSManaged public var passwordpasswordConfirmation: String?
+    @NSManaged public var parkinglottrend: [String: Int]?
+    @NSManaged public var currentlot: String?
+
 
 }
 
